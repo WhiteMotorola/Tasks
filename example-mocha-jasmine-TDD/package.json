@@ -1,0 +1,16 @@
+{
+  "name": "task",
+  "version": "1.0.0",
+  "main": "Bucket.js",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^2.5.3",
+    "webpack": "^1.13.1"
+  },
+  "scripts": {
+    "test": "jasmine-node spec"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

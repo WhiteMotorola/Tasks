@@ -1,0 +1,596 @@
+@font-face {
+  font-family: GothamSSm;
+  src: url(../fonts/GothamSSm-Book.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: GothamSSm;
+  src: url(../fonts/GothamSSm-Light.ttf);
+  font-weight: lighter;
+}
+@font-face {
+  font-family: GothamSSmM;
+  src: url(../fonts/GothamSSm-Medium.ttf);
+}
+@font-face {
+  font-family: GothamSSm;
+  src: url(../fonts/GothamSSm-Book.eot);
+  font-weight: bold;
+}
+@font-face {
+  font-family: GothamSSm;
+  src: url(../fonts/GothamSSm-Light.eot);
+  font-weight: lighter;
+}
+@font-face {
+  font-family: GothamSSmM;
+  src: url(../fonts/GothamSSm-Medium.eot);
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+body {
+  background-color: #d9d9d9;
+  font-family: "GothamSSm", "Arial", sans-serif;
+}
+.widget {
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.calendar {
+  width: 346px;
+  height: 427px;
+}
+.calendar-header {
+  border-radius: 4px 4px 0 0;
+  background-color: rgb(64, 74, 88);
+  color: white;
+  text-align: center;
+  padding: 22px 38px 23px 38px;
+}
+.calendar-header a {
+  color: white;
+  font-size: 10px;
+}
+.prev {
+  float: left;
+}
+.next {
+  float: right;
+}
+.calendar-header h1 {
+  display: inline-block;
+  font-size: 17px;
+  font-weight: lighter;
+}
+.calendar-form {
+  padding-top: 10px;
+  padding-left: 28px;
+}
+.days {
+  border-spacing: 4px 4px;
+  color: #666666;
+  text-align: center;
+  font-size: 14px;
+}
+.days td {
+  width: 37px;
+  height: 37px;
+  box-sizing: border-box;
+}
+.days thead {
+  font-weight: bold;
+}
+.event {
+  color: #fb6362;
+  font-weight: bold;
+}
+.curr {
+  border-radius: 50%;
+  background-color: #fb6362;
+  color: white;
+  font-weight: bold;
+}
+.outside {
+  color: #c5c5c5;
+}
+.widget-button {
+  width: 298px;
+  height: 58px;
+  background-color: rgb(251, 99, 98);
+  color: white;
+  border: 1px solid rgb(251, 99, 98);
+  border-radius: 3px;
+  box-shadow: 0px 1px 0px 0px #6a5656;
+  margin-top: 20px;
+  margin-left: -4px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.widget-button:active,
+.widget-button:focus {
+    outline: none;
+}
+.widget-button:hover {
+  cursor: pointer;
+}
+.booking {
+  width: 346px;
+  height: 626px;
+}
+.booking-header {
+  height: 185px;
+}
+.booking-header img {
+  border-radius: 4px 4px 0 0;
+}
+.location {
+  position: relative;
+  bottom: 72px;
+  color: white;
+  padding-left: 22px;
+}
+.location h1 {
+  font-size: 25px;
+  font-weight: bold;
+  word-spacing: -2px;
+}
+.location h3 {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+}
+.location .fa {
+  font-size: 19px;
+  width: 10px;
+  padding-left: 5px;
+  padding-top: 1px;
+}
+.booking-form {
+  font-size: 10px;
+  padding-left: 24px;
+  padding-top: 23px;
+  word-spacing: 3px;
+  letter-spacing: -1px;
+}
+.shadow {
+  box-shadow: inset -1px 1px 2px #cccccc;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+  border: 1px solid white;
+  border-radius: 2px;
+  font-family: "GothamSSmM";
+  font-size: 14px;
+}
+.check-input {
+  width: 296px;
+  height: 45px;
+  margin-top: 7px;
+  padding-left: 13px;
+  padding-top: 1px;
+  outline: none;
+  color: rgb(99, 98, 98);
+}
+.choise-data {
+  position: relative;
+  display: inline-block;
+  bottom: 40px;
+  left: 256px;
+}
+.in, .out {
+  height: 70px;
+}
+.in img,
+.out img {
+  border-radius: 1px;
+}
+.out {
+    margin-top: 22px;
+}
+.flexible-dates {
+  height: 23px;
+  margin-top: 16px;
+}
+.label-checkbox {
+  width: 25px;
+  height: 23px;
+  text-align: center;
+  font-size: 17px;
+  display: inline-block;
+  float: left;
+}
+.flexible-dates h1 {
+  font-size: 14px;
+  letter-spacing: 0px;
+  line-height: 23px;
+  margin-left: 35px;
+  word-spacing: 1px;
+}
+.flexible-dates input[type="checkbox"] {
+    display: none;
+}
+.label-checkbox .fa {
+  visibility: hidden;
+}
+input[type = checkbox]:checked + .label-checkbox .fa {
+    visibility: visible;
+}
+.select-conteiner h1 {
+  font-size: 15px;
+}
+.select-conteiner {
+  float: left;
+  margin-top: 23px;
+  width: 139px;
+  height: 72px;
+}
+.select-conteiner ul li{
+  margin-top: 7px;
+  width: 139px;
+  height: 47px;
+  color: #414b59;
+  padding-left: 9px;
+  padding-left: 14px;
+  padding-top: 14px;
+  font-size: 16px;
+}
+.choise-arrow {
+  position: relative;
+  bottom: 42px;
+  left: 98px;
+  width: 37px;
+  height: 37px;
+  display: inline-block;
+  font-size: 15px;
+  color: white;
+  background-color: #404a58;
+  border-radius: 1px;
+}
+.adults .fa,
+.children .fa {
+  padding-top: 11px;
+  padding-left: 14px;
+}
+.children {
+  margin-left: 20px;
+}
+.booking-form label:hover {
+  cursor: pointer;
+}
+.booking-form button {
+  margin-left: 1px;
+  width: 296px;
+  margin-top: 38px;
+}
+.widget-button .fa {
+  font-size: 21px;
+  margin-right: 5px;
+}
+.email {
+  height: 487px;
+  width: 380px;
+}
+.email-form {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.email-form .shadow {
+  width: 100%;
+}
+.mail-in, .subject, .message {
+  outline: none;
+  letter-spacing: 0px;
+}
+.mail-in, .subject {
+  height: 45px;
+  margin-top: 24px;
+}
+.mail, .sub {
+  position: relative;
+}
+.mail-in {
+  padding-left: 197px;
+}
+.mail span{
+  position: absolute;
+  top: 29px;
+  height: 37px;
+  background-color: #404a58;
+  left: 4px;
+  color: white;
+  padding: 11px 10px;
+  box-sizing: border-box;
+  font-family: "GothamSSmM";
+  font-size: 14px;
+}
+.close {
+  margin-left: 4px;
+  color: white;
+}
+.add {
+  position: absolute;
+  top: 29px;
+  left: 298px;
+  font-size: 30px;
+  color: rgb(98, 98, 98);
+}
+.add .fa {
+  transform: rotate(270deg);
+  font-size: 20px;
+}
+.subject {
+  padding-left: 9px;
+  padding-top: 2px;
+}
+.message {
+  height: 223px;
+  margin-top: 25px;
+  resize: none;
+  overflow: auto; /*to hide scroll line in IE*/
+  padding: 14px 11px;
+}
+.email-form button {
+  position: relative;
+  top: 3px;
+  left: 206px;
+  width: 127px;
+  height: 48px;
+}
+.destination {
+  height: 340px;
+  width: 792px;
+}
+.destination-nav {
+  position: relative;
+  width: 72px;
+  background-color: rgb(64, 74, 88);
+  height: 100%;
+  float: left;
+  border-radius: 4px 0px 0px 4px;
+}
+.destination-nav ul {
+  height: 100%;
+}
+.destination-nav li {
+  position: relative;
+  width: 72px;
+  height: 33.3%;
+}
+.destination-nav a {
+  display: block;
+  position: absolute;
+}
+.destination-nav li:hover {
+  background-color: rgb(251, 99, 98);
+  cursor: pointer;
+}
+.destination-nav .watch {
+  background-image: url("../img/destination-icons.png");
+  background-position: 0 -129px;
+  width: 27px;
+  height: 17px;
+  left: 22px;
+  top: 48px;
+}
+.destination-nav .place {
+  background-image: url("../img/destination-icons.png");
+  background-position: 0 -93px;
+  width: 18px;
+  height: 26px;
+  left: 28px;
+  top: 42px;
+}
+.destination-nav .bookmarks {
+  background-image: url("../img/destination-icons.png");
+  background-position: 0 0;
+  width: 21px;
+  height: 20px;
+  left: 25px;
+  top: 47px;
+}
+.active {
+  background-color: rgb(251, 99, 98);
+  border-radius: 4px 0px 0px 0px;
+}
+.destination-nav ul li:nth-child(2) {
+  border-bottom: 1px solid rgb(24, 29, 31);
+}
+.about {
+  padding-top: 27px;
+  padding-left: 35px;
+  padding-right: 42px;
+  position: relative;
+  box-sizing: border-box;
+  width: 357px;
+  height: 100%;
+  float: left;
+}
+.about h1 {
+  font-size: 20px;
+  font-weight: bold;
+  width: 191px;
+  line-height: 29px;
+  color: #4d4d4d;
+}
+.about h2 {
+  font-size: 14px;
+  margin-top: 11px;
+  color: rgb(99, 99, 99);
+}
+.about h2 span {
+  color: #4d4d4d;
+  font-family: "GothamSSmM";
+}
+.about p {
+  margin-top: 30px;
+  font-size: 14px;
+  line-height: 24px;
+  word-spacing: -3px;
+  color: #b8b8b8;
+}
+.about .read-more {
+  color: #fb6362;
+  font-size: 14px;
+  position: absolute;
+  top: 253px;
+  left: 33px;
+}
+.img-block {
+  position: relative;
+  float: left;
+}
+.img-block .wide-arrow {
+  position: absolute;
+  top: 38px;
+}
+.likes, .comments {
+  position: absolute;
+  bottom: 27px;
+  color: white;
+}
+.likes {
+  left: 293px;
+}
+.comments {
+  left: 208px;
+}
+.img-block a {
+  display: block;
+  position: absolute;
+}
+.img-block img {
+  border-radius: 0px 4px 4px 0px;
+}
+.comment {
+  background-image: url("../img/destination-icons.png");
+  background-position: 0 -30px;
+  height: 21px;
+  width: 25px;
+  top: -1px;
+  right: 40px;
+}
+.like {
+  background-image: url("../img/destination-icons.png");
+  background-position: 0 -61px;
+  height: 22px;
+  width: 25px;
+  top: -1px;
+  right: 53px;
+}
+.graph {
+  position: absolute;
+  height: 340px;
+  width: 791px;
+}
+.marking {
+  margin-left: 41px;
+}
+.marking li:first-child {
+  margin-top: 48px;
+}
+.marking li {
+  width: 704px;
+  border-bottom: 1px solid #eaeaea;
+  font-size: 12px;
+  height: 18px;
+  color: #666666;
+  margin-top: 51px;
+}
+.columns {
+  position: absolute;
+  bottom: 59px;
+  left: 74px;
+}
+.columns li {
+  width: 55px;
+  background-color: #fb6362;
+  display: inline-block;
+  margin-left: 30px;
+  border-radius: 1px;
+}
+.columns li span {
+  position: absolute;
+  bottom: -19px;
+  font-size: 12px;
+  font-family: "GothamSSmM";
+  color: rgb(66, 66, 66);
+}
+.columns .mon span {
+  margin-left: 14px;
+}
+.columns .tues span,
+.columns .wed span {
+  margin-left: 13px;
+}
+.columns .thu span,
+.columns .sun span {
+  margin-left: 15px;
+}
+.columns .fri span {
+  margin-left: 19px;
+}
+.columns .sat span {
+  margin-left: 17px;
+}
+.columns li div {
+  position: absolute;
+  color: white;
+  background-color: #404a58;
+  font-size: 12px;
+  font-family: "GothamSSmM";
+  width: 55px;
+  height: 30px;
+  border-radius: 1px;
+  text-align: center;
+  line-height: 29px;
+  visibility: hidden;
+}
+.columns li div:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -6px;
+  left: 21px;
+  transform: rotate(45deg);
+  border: 6px solid #404a58;
+}
+.columns .mon div {
+  top: 75px;
+}
+.columns .tues div {
+  top: 62px;
+}
+.columns .wed div {
+  top: 5px;
+}
+.columns .thu div {
+  top: -34px;
+}
+.columns .fri div {
+  top: -5px;
+}
+.columns .sat div {
+  top: -45px;
+}
+.columns .sun div {
+  top: -19px;
+}
+.columns li:hover div {
+  visibility: visible;
+}
+.columns li:hover {
+  cursor: pointer;
+}
+@keyframes grow {
+  0% {height: 200px;}
+  50% {height: 169px;}
+}
+.columns li {
+  animation: grow 5s;
+}

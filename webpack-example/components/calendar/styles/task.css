@@ -1,0 +1,13 @@
+.tasks li {
+    text-align: left;
+    color: black;
+}
+.time {
+    padding: 3px;
+    border: 1px solid black;
+    font-size: 14px;
+    font-weight: bold;
+}
+.description {
+    font-size: 12px;
+}

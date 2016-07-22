@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<link href = "css/style.css" rel = "stylesheet"/>
+      <link rel = "stylesheet" href = "css/fonts/font-awesome.min.css"/>
+			<title>Widgets</title>
+		</head>
+		<body>
+			<!--Calendar-->
+      <div class = "widget calendar">
+        <header class = "calendar-header">
+          <a href = "#" class = "prev"><i class="fa fa-angle-left fa-2x"></i></a>
+          <h1>May 2014</h1>
+          <a href = "#" class = "next"><i class="fa fa-angle-right fa-2x"></i></a>
+        </header>
+				<form class = "calendar-form">
+					<table class = "days">
+						<thead>
+							<tr>
+								<td>Sun</td>
+								<td>Mon</td>
+								<td>Tue</td>
+								<td>Wed</td>
+								<td>Thu</td>
+								<td>Fri</td>
+								<td>Sat</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class = "outside">29</td>
+								<td class = "outside">30</td>
+								<td>1</td>
+								<td>2</td>
+								<td class = "curr">3</td>
+								<td>4</td>
+								<td>5</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td class = "event">7</td>
+								<td>8</td>
+								<td>9</td>
+								<td>10</td>
+								<td>11</td>
+								<td>12</td>
+							</tr>
+							<tr>
+								<td>13</td>
+								<td>14</td>
+								<td>15</td>
+								<td>16</td>
+								<td>17</td>
+								<td>18</td>
+								<td>19</td>
+							</tr>
+							<tr>
+								<td>20</td>
+								<td>21</td>
+								<td>22</td>
+								<td class = "event">23</td>
+								<td>24</td>
+								<td>25</td>
+								<td>26</td>
+							</tr>
+							<tr>
+								<td>27</td>
+								<td>28</td>
+								<td>29</td>
+								<td>30</td>
+								<td class = "outside">1</td>
+								<td class = "outside">2</td>
+								<td class = "outside">3</td>
+							</tr>
+						</tbody>
+					</table>
+					<button class = "widget-button">ADD EVENT</button>
+				</form>
+      </div>
+			<!--Booking-->
+			<div class = "widget booking">
+				<header class = "booking-header">
+					<img src = "img/paris.png" />
+					<div class = "location">
+						<h1>Hotel Relais</h1>
+						<i class = "fa fa-map-marker"></i>
+						<h3>Paris, France</h3>
+					</div>
+				</header>
+				<form class = "booking-form">
+					<div class = "in">
+						<h2>Check in</h2>
+						<input class = "shadow check-input" type = "text" placeholder = "9 July, 2016" id = "data-in">
+						<label for = "data-in" class = "choise-data"><img src = "img/calendar-icon.png"></label>
+					</div>
+					<div class = "out">
+						<h2>Check out</h2>
+						<input class = "shadow check-input" type = "text" placeholder = "16 July, 2016" id = "data-out">
+						<label for = "data-out" class = "choise-data"><img src = "img/calendar-icon.png"></label>
+					</div>
+					<div class = "flexible-dates">
+						<input id = "checkbox" type = "checkbox" checked = "">
+						<label for = "checkbox" class = "shadow label-checkbox"><i class = "fa fa-check"></i></label>
+						<h1>Flexible dates</h1>
+					</div>
+					<div class = "select-conteiner adults">
+						<h1>Adults</h1>
+						<ul id = "arrow-adults">
+							<li class = "shadow" style = "display: none">1</li>
+							<li class = "shadow">2</li>
+						</ul>
+						<label for = "arrow-adults" class = "choise-arrow"><i class = "fa fa-caret-down"></i></label>
+					</div>
+					<div class = "select-conteiner children">
+						<h1>Children</h1>
+						<ul id = "arrow-children">
+							<li class = "shadow">1</li>
+							<li class = "shadow" style = "display: none">2</li>
+							<li class = "shadow" style = "display: none">3</li>
+							<li class = "shadow" style = "display: none">4</li>
+						</ul>
+						<label for = "arrow-children" class = "choise-arrow"><i class = "fa fa-caret-down"></i></label>
+					</div>
+					<button class = "widget-button"><i class="fa fa-search"></i>SEARCH ROOMS</button>
+				</form>
+			</div>
+			<!--Email-->
+			<div class = "widget email">
+				<form class = "email-form">
+					<div class = "mail">
+						<span>rick.james@mail.com<a href="#" class = "close">&#10060</a></span>
+						<input class = "shadow mail-in" type = "text">
+						<a href = "#" class = "add">+</a>
+					</div>
+					<div class = "sub">
+						<input class = "shadow subject" type = "text" placeholder = "Subject">
+						<a href = "#" class = "add"><i class="fa fa-paperclip"></i></a>
+					</div>
+					<textarea class = "shadow message" placeholder = "Message"></textarea>
+					<button class = "widget-button">SEND</button>
+				</form>
+			</div>
+			<!--Destination-->
+			<div class = "widget destination">
+				<nav class = "destination-nav">
+					<ul>
+						<li class = "active"><a href = "#" class = "watch"></a></li>
+						<li class = "not-active"><a href = "#" class = "place"></a></li>
+						<li class = "not-active"><a href = "#" class = "bookmarks"></a></li>
+					</ul>
+				</nav>
+				<article class = "about">
+					<h1>My most favourite place in the world</h1>
+					<h2><span>154</span> Reviews</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a pulvinar ipsum. Aliquam sit amet iaculis dolor. Vivamus sed diam sollicitudin.
+					</p>
+					<a href = "#" class = "read-more">Read more</a>
+				</article>
+				<div class = "img-block">
+					<img src = "img/wide-arrow.png" class = "wide-arrow" />
+					<img src = "img/fav-place.png" />
+					<div class = "comments"><a href = "#" class = "comment"></a>752</div>
+					<div class = "likes"><a href = "#" class = "like"></a>2709</div>
+				</div>
+			</div>
+			<!--Bar graph-->
+			<div class = "widget graph">
+				<ul class = "marking">
+					<li>40</li>
+					<li>30</li>
+					<li>20</li>
+					<li>0</li>
+				</ul>
+				<ul class = "columns">
+					<li class = "mon" style = "height: 49px;">
+						<span>Mon</span>
+						<div>17</div>
+					</li>
+					<li class = "tues" style = "height: 62px;">
+						<span>Tues</span>
+						<div>19</div>
+					</li>
+					<li class = "wed" style = "height: 119px;">
+						<span>Wed</span>
+						<div>27</div>
+					</li>
+					<li class = "thu" style = "height: 158px;">
+						<span>Thu</span>
+						<div>33</div>
+					</li>
+					<li class = "fri" style = "height: 129px;">
+						<span>Fri</span>
+						<div>28</div>
+					</li>
+					<li class = "sat" style = "height: 169px;">
+						<span>Sat</span>
+						<div>34</div>
+					</li>
+					<li class = "sun" style = "height: 143px;">
+						<span>Sun</span>
+						<div>31</div>
+					</li>
+				</ul>
+			</div>
+    </body>
+  </html>
